@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Təsadüfi secim funksiyası</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="Navbar">
+        <a href="index.html" class="active">Hesablama funksiyaları</a>
+        <a href="random.html">Təsadüfi secim funksiyası</a>
+        <a href="consul.html">Consul və xətalar</a>
+        <a href="operator.html">Şərt operatoru</a>
+        <a href="calisma.html">Calismalar</a>
+        <a href="lotoreya.html">Lotoreya</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="secim">
+          <h1>Təsadüfi seçim funksiyası</h1>
+          <p>
+            Javascript dilində və bir çox proqramlaşdırma dillərində təsadüfi
+            seçim funksiyası mövcuddur. Bu funksiya vasitəsilə təsadüfi ədədlər
+            seçmək mümkündür. Məsələn, Snake oyununu xatırlayaq. Oyunda snake
+            qarşısındakı yeməyi yedikdən sonra yemək başqa bir yerdə yaranırdı.
+            Həmin yeməyin yarandığı yer isə təsadüfi olaraq seçilməlidir. Çünki
+            əvvəlcədən təyin olunsa, hər dəfə yemək eyni yerdə olacaq və bu da
+            oyunu maraqsızlaşdıracaq. Buna görə də, təsadüfi seçim funksiyası
+            çox vacibdir. Məsələn, lotereya oyunu da hazırlaya bilərik. Bu
+            oyunda da ədədləri seçmək üçün təsadüfi seçim funksiyasından
+            istifadə etməliyik. Təsadüfi seçimlər oyunlarda və bir çox yerdə
+            istifadə olunmaqdadır və vacib funksiyalardan biridir. Javascript
+            daxilində təsadüfi ədəd seçmək üçün
+            <span>Math.random </span>funksiyasından istifadə olunur. Funksiya
+            heç bir parametr almır
+          </p>
+        </div>
+        <br />
+        <div class="random">
+          <p>
+            Təsadüfi olaraq seçmək istədiyimiz ədəd xüsusi bir aralıqda da ola
+            bilər. Məsələn, istəyə bilərik ki, seçəcəyimiz ədəd 9 və 30 arasında
+            olsun. Bu zaman necə edək? Ədədi 30-ə vursaq 0 və 30 arasında bir
+            ədəd alacağıq. İndi biz elə etməliyik ki, bu 0 və 30 arasında ədəd
+            yalnız 9 və 30 arasında olsun. Bu zaman, ədədi 30-ə yox, 21-ə vura
+            bilərik. Ədədi 21-ə vurduqda, ədəd 0 və 21 arasında olacaq. Onun da
+            üzərinə 9 gəldikdə, artıq ədədimiz 9 və 30 arasında olmuş olacaq.
+            Məsələn, 4 tapılsa 13 olacaq. 14 tapılsa 23 olacaq. Aşağıdakı koda
+            baxaq.
+          </p>
+          <div class="numune">
+            <p>
+              var x;
+              <br />
+              x=Math.round(Math.random()*21+9);
+              <br />
+              document.write(x);
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app/random.js"></script>
+  </body>
+</html>

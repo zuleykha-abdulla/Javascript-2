@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Şərt operatoru</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="Navbar">
+        <a href="index.html" class="active">Hesablama funksiyaları</a>
+        <a href="random.html">Təsadüfi secim funksiyası</a>
+        <a href="consul.html">Consul və xətalar</a>
+        <a href="operator.html">Şərt operatoru</a>
+        <a href="calisma.html">Calismalar</a>
+        <a href="lotoreya.html">Lotoreya</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="operator">
+          <h1>Şərt operatoru</h1>
+          <br />
+          <p>
+            Proqramlaşdırmada da bu şərtlərdən geniş istifadə olunmaqdadır.
+            Çünki şərtlər çox vacibdir, bir çox yerdə istifadə olunmaqdadır.
+            Javascript dilində şərt yaratmaq üçün if operatorundan istifadə
+            olunur.
+          </p>
+          <div class="numune">
+            <p>
+              var x;
+              <br />
+              x=prompt("5+3=?");
+              <br />
+              if(x==8) document.write("Cavab duzdur.");
+            </p>
+          </div>
+          <p>Aşağıdaki səkildən aydin görmək mümkündür</p>
+          <div class="picture">
+            <img src="./img/Picture2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="sert">
+          <p>
+            Şərt operatoruna aid başqa bir nümunə də göstərək. İstifadəçidən bir
+            şifrə soruşaq, əgər şifrəni bilərsə ona “Xoş gəldiniz” deyək.
+            Şifrəmiz kiçik hərflərlə “orxan85” olsun. Aşağıdakı koda baxaq.
+          </p>
+          <br />
+          <div class="numune">
+            <p>
+              var x;
+              <br />
+              x=prompt("Sifreni daxil edin:");
+              <br />
+              if(x=="javascript12") document.write("Xos geldiniz.");
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="eger">
+          <p>
+            Şərt daxilində bərabərlikdən əlavə ədədlərin böyüklük və kiçikliyini
+            də yoxlamaq mümkündür. Bunun üçün sadəcə boyuk (“>”) və ya kicik
+            (“<” ) işarələrindən istifadə olunur. Təsəvvür edək ki, bir film
+            göstəririk. Ancaq, filmə baxmaq üçün yaşınız 7-dən çox olmalıdır.
+            Bunun üçün istifadəçidən yaşının neçə olduğunu soruşmalıyıq. Əgər,
+            yaşı 7-dən böyük olarsa, ona filmi göstəririk. Aşağıdakı nümunəyə
+            baxaq:
+          </p>
+          <br />
+          <div class="numune">
+            <p>
+              var yas;
+              <br />
+              yas=prompt("Yasiniz:");
+              <br />
+              if(yas>7) document.write("Filmi izleye bilersiniz.");
+            </p>
+          </div>
+        </div>
+
+        <div class="room">
+          <p>
+            İndi isə fərz edək ki, bir otağımız var və bu otağa bütün yaşda
+            olanlar girə bilərlər, ancaq, yalnızca yaşı 20 olanlar girə
+            bilməzlər. Bu zaman, biz istifadəçidən yaşını soruşmalıyıq və onun
+            yaşının 20-dən fərqli olub-olmadığını yoxlamalıyıq. Şərt daxilində
+            fərqliliyi yoxlamaq üçün “!=” ifadəsindən istifadə olunur.
+          </p>
+          <div class="numune">
+            <p>
+              var age;
+              <br />
+              age=prompt("how old are you?:");
+              <br />
+              if(age!=20) document.write("Wellcome into the room!");
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./app/operator.js"></script>
+  </body>
+</html>

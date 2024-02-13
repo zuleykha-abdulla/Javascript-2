@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calişmalar</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="Navbar">
+        <a href="index.html" class="active">Hesablama funksiyaları</a>
+        <a href="random.html">Təsadüfi secim funksiyası</a>
+        <a href="consul.html">Consul və xətalar</a>
+        <a href="operator.html">Şərt operatoru</a>
+        <a href="calisma.html">Calismalar</a>
+        <a href="lotoreya.html">Lotoreya</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="calisma">
+          <h1>Kassir müştərimizə kömək</h1>
+          <p>
+            Kassir müştərimiz tez-tez hesablamalar aparır və bu hesablamalarını
+            asanlaşdıracaq bir səhifə yaratmağımızı xahiş edir. Biz də bunun
+            üçün iki dəfə prompt funksiyasından istifadə edib 2 qiymət götürə və
+            onları toplaya bilərik.
+          </p>
+          <div class="numune">
+            <p>
+              var x,y,z,d;
+              <br />
+              x=prompt("Birinci məhsulun pulu");
+              <br />
+              y=prompt("İkinci məhsulun pulu");
+              <br />
+              alert(x*1+y*1+z*1+d*1);
+            </p>
+          </div>
+        </div>
+        <div class="tercume">
+          <h1>Vocablary</h1>
+          <div class="numune1">
+            <p>
+              var soz;
+              <br />
+              soz=prompt("Sozu daxil edin:");
+              <br />
+              if(soz=="apple"){
+              <br />
+              alert("Alma"); }
+              <br />
+              if(soz=="orange"){
+              <br />
+              alert("Portagal"); }
+              <br />
+              if(soz=="smart"){
+              <br />
+              alert("Ağıllı"); }
+            </p>
+          </div>
+        </div>
+        <br />
+
+        <div class="riyaziyyat">
+          <h1>Riyaziyyatçı müştərimizə kömək</h1>
+          <p>
+            Bu dəfə riyaziyyatçı müştərimiz bizdən hesablamalarını aparmaq üçün
+            bir proqram istəməkdədir. Tələbi isə bu şəkildədir ki, ilk olaraq
+            iki mətn sahəsi olsun. Birinci sahəyə istədiyi ədədi daxil etsin.
+            İkinci sahə isə əməliyyatın nömrəsi olsun. İkinci sahəyə 1 daxil
+            etdikdə İlk ədədin kök altısı, 2 daxil etdikdə kvadratı, 3 daxil
+            etdikdə isə ədədin natural loqarifması tapılsın.
+          </p>
+          <div class="numune2">
+            <p>
+              var x,y;
+              <br />
+              x=prompt("Ededi daxil edin");
+              <br />
+              y=prompt("Emeliyyati daxil edin. 1- kok alti, 2 kvadrat, 3 natural
+              loqarifma");
+              <br />
+              if(y==1){
+              <br />
+              alert(Math.sqrt(x));
+              <br />
+              }
+              <br />
+              if(y==2){
+              <br />
+              alert(Math.pow(x,2));
+              <br />
+              }
+              <br />
+              if(y==3)
+              <br />
+              {
+              <br />
+              alert(Math.log(x));
+              <br />
+              }
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app/calisma.js"></script>
+  </body>
+</html>

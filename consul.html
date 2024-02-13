@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konsol və xətalar</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="Navbar">
+        <a href="index.html" class="active">Hesablama funksiyaları</a>
+        <a href="random.html">Təsadüfi secim funksiyası</a>
+        <a href="consul.html">Consul və xətalar</a>
+        <a href="operator.html">Şərt operatoru</a>
+        <a href="calisma.html">Calismalar</a>
+        <a href="lotoreya.html">Lotoreya</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="consul">
+          <h1>Konsol və xətalar</h1>
+          <br />
+          <p>
+            İstifadə etdiyimiz brauzerlərdə konsol hissəsi mövcuddur. Biz bu
+            hissəyə müxtəlif məlumatları yaza bilərik. Bu hissə obyektlər,
+            çoxluqlar kimi məlumatları daha aydın şəkildə görməyə imkan verir.
+            Həmçinin, Javascript xətaları da bu hissədə görünür. Konsola baxmaq
+            üçün ilk olaraq brauzerdə sağ düyməyə klikləyib “Inspect element”
+            seçiminə daxil olmaq lazımdır. Bundan sonra sağda və ya aşağıda
+            çıxan pəncərədə menyu görəcəksiniz. Bu menyuda “Elements”, “Console”
+            və əlavə bölmələr görə bilərsiniz. Qarşıdakı ox işarəsinə
+            klikləyərək daha çox bölmə görə bilərsiniz. Bölmələrdən “Console”
+            yazılan bölmənin üzərinə klikləyək. Bundan sonra aşağıda bir sahə
+            açılacaq. Bu sahədə Javascript xətalarını görə və o sahəyə
+            məlumatlar yaza bilərik. Xətaları görmək üçün düzgün olmayan bir
+            javascript kodu yazaq və yadda saxlayaq.
+          </p>
+          <div class="numune">
+            <p>alet("Salam");</p>
+          </div>
+          <br />
+          <p>
+            Konsola javascript kodlarını da yaza bilərsiniz. Məsələn, konsola
+            birbaşa alert(5+5) yazıb enterə basdıqda kodun işlədiyini və
+            xəbərdarlıq qutusu çıxdığını görəcəksiniz.
+            <br />
+
+            Aşağıdaki səkildən aydin görmək mümkündür
+          </p>
+        </div>
+        <div class="image">
+          <img src="./img/Picture1.jpg" alt="" />
+        </div>
+
+        <div class="emeliyyat">
+          <h4>Konsolun bir sıra əlavə funksiyaları da mövcuddur</h4>
+          <br />
+          <p>
+            Console.clear() funksiyası – Konsolu təmizləmək üçün istifadə
+            olunur. Funksiyanı istifadə etdikdə konsoldakı məlumatlar silinir.
+            Nümunəyə baxaq.
+          </p>
+
+          <div class="numune">
+            <p>
+              console.log("Salam");
+              <br />
+              console.clear();
+              <br />
+              <span>konsola yazılmış məlumatlar silinir</span>
+            </p>
+          </div>
+          <br />
+          <p>
+            Console.error() funksiyası – Məlumatların konsolda xəta formasında
+            yazılmasını təmin edir. Nümunəyə baxaq.
+          </p>
+
+          <div class="numune">
+            <p>
+              console.error("Saytda xeta var!");
+              <br />
+              <span>
+                məlumat konsola qırmızı rəngdə və xəta şəklində çıxmış olur
+              </span>
+            </p>
+          </div>
+          <p>
+            Console.warn() funksiyası – Bu funksiya məlumatların xəbərdarlıq
+            şəklində çıxmasını təmin edir.
+          </p>
+          <br />
+          <div class="numune">
+            <p>
+              console.warn("Diqqet! Bu hisseye basqa kod yazmayin!");
+              <br />
+
+              <span
+                >Nəticədə məlumat sarı rəngdə və xəbərdarlıq şəklində çıxmış
+                olur</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app/consul.js"></script>
+  </body>
+</html>

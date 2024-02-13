@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Hesablama funksiyaları</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="Navbar">
+        <a href="index.html" class="active">Hesablama funksiyaları</a>
+        <a href="random.html">Təsadüfi secim funksiyası</a>
+        <a href="consul.html">Consul və xətalar</a>
+        <a href="operator.html">Şərt operatoru</a>
+        <a href="calisma.html">Calismalar</a>
+        <a href="lotoreya.html">Lotoreya</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+
+    <div class="hesablama">
+      <h1>Hesablama funksiyaları</h1>
+      <br />
+      <p>
+        Bu mövzuda isə ədədin kök altısını, faktorialını, bucağın sinus və ya
+        kosinusu tapmaq kimi daha mürəkkəb əməliyyatlara baxacağıq. Bu
+        əməliyyatları aparmaq üçün Javascript dilində hazır funksiyalar
+        mövcuddur. Bu funksiyalar Math obyekti altında yerləşməkdədir. Bu
+        funksiyalardan biri sqrt funksiyasıdır. Bu funksiya ədədin kök altısını
+        tapmaq üçün istifadə olunur. Aşağıdakı nümunəyə baxaq.
+      </p>
+      <div class="numune">
+        <p>
+          var x;
+          <br />
+          x=Math.sqrt(625);
+          <br />
+          document.write(x);
+          <br />
+          <br />
+          <span>Nəticə 25</span>
+        </p>
+      </div>
+      <div class="numune">
+        <p>
+          var x;
+          <br />
+          x = Math.sqrt(225);
+          <br />
+          document.write(x);
+          <br />
+          <br />
+          <span>Nəticə 15</span>
+        </p>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <tr>
+          <th>funksiya</th>
+          <th>yerinə yetirdiyi əməliyyat</th>
+        </tr>
+        <tr>
+          <td>
+            var x;
+            <br />
+            x=Math.sqrt(9);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>Bu funksiya ədədin kök altısını tapmaq üçün istifadə olunur.</td>
+        </tr>
+        <tr>
+          <td>
+            var x; x=Math.abs(-5);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>Bu funksiya ədədin modulunu tapmaq üçün istifadə olunur</td>
+        </tr>
+        <tr>
+          <td>
+            var x;
+            <br />
+            x=Math.ceil(4.3);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>
+            Ədədi ən yaxın yuxarı tam ədədə yuvarlaqlaşdırmaq
+            <br />
+            Nəticədə 4.3 ədədinə ən yaxın yuxarı tam ədəd 5
+          </td>
+        </tr>
+        <tr>
+          <td>
+            var x;
+            <br />
+            x=Math.min(9,10,6,13);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>
+            Daxil edilmiş ədədlərdən ən kiçiyini tapmaq üçün istifadə olunur.
+            <br />
+            ədədlərdən ən kiçiyi 6-dir.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            var x;
+            <br />
+            x=Math.pow(6,3);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>
+            Bir ədədi qüvvətə yüksəltmək üçün istifadə olunur.
+            <br />
+            Nəticədə ifadə hesablanır və 8 çap olunur
+          </td>
+        </tr>
+        <tr>
+          <td>
+            var x;
+            <br />
+            x=Math.floor(2.6);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>
+            Ədədi ən yaxın aşağı tam ədədə yuvarlaqlaşdırmaq üçün istifadə
+            olunur.
+            <br />
+            2.6 ədədinə ən yaxın aşağı tam ədəd 2 olduğu üçün,
+            <br />
+            nəticədə 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            var x; <br />x=Math.max(5,4,7,8); <br />
+            document.write(x);
+          </td>
+          <td>ədədlərdən ən böyüyünü tapmaq üçün istifadə olunur.</td>
+        </tr>
+        <tr>
+          <td>
+            var x;
+            <br />
+            x=Math.round(4.6);
+            <br />
+            document.write(x);
+            <br />
+          </td>
+          <td>Ədədi ən yaxın tam ədədə yuvarlaqlaşdırmaq</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <script src="./app/funksiya.js"></script>
+  </body>
+</html>
